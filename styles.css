@@ -1,0 +1,80 @@
+/* Use Montserrat for the body text */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Use Montserrat Bold for headings */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Specify the bold weight */
+}
+
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the navbar */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Style the logo */
+.logo {
+    font-size: 24px; /* Increase the font size */
+    color: white; /* White text color */
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase text */
+}
+
+/* Style the navigation items */
+.nav-items {
+    display: flex;
+    list-style: none;
+    padding: 10px; /* Add padding to the items */
+}
+
+.nav-items li {
+    margin-right: 20px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Add some hover effect for the links */
+.nav-items a:hover {
+    color: #ff6600;
+}
+
+/* Style for collapsed printer details */
+.printer-details {
+    display: none;
+}
+
+/* Style for expanded printer details */
+.printer-details.expanded {
+    display: block;
+    margin-top: 10px; /* Add spacing between the button and details */
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0; /* Fixed at the bottom */
+    width: 100%; /* Make it full width */
+}
+
+

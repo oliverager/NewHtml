@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML Project</title>
+    <link rel="stylesheet" href="styles.css"> <!-- If you have a CSS file -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                Theilgaard
+            </div>
+            <ul class="nav-items">
+                <li><a href="#">Produktion</a></li>
+                <li><a href="#">Pakkelinje</a></li>
+                <li><a href="#">Ekspedition</a></li>
+                <li><a href="#">Labels</a></li>
+                <li><a href="#">Oversigtskærm</a></li>
+                <li><a href="#">Varemodtagelse</a></li>
+                <li><a href="#">Service Management</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Label Printers</h1>
+
+    <!-- Create a list of label printers -->
+    <ul class="printer-list">
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+              </tr>
+              <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+              </tr>
+              <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+              </tr>
+        </table>
+        <li>
+            <button class="expand-button">Expand</button>
+            <h2>Printer Model 1</h2>
+            <div class="printer-details">
+                <p>Details about Printer Model 1...</p>
+            </div>
+        </li>
+        <!-- Add more printer entries as needed -->
+    </ul>
+
+    <h1>Select Your Favorite Fruit</h1>
+
+    <!-- Create a dropdown list -->
+    <select id="fruitDropdown">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="cherry">Cherry</option>
+        <option value="grape">Grape</option>
+        <option value="orange">Orange</option>
+        <option value="strawberry">Strawberry</option>
+        <option value="watermelon">Watermelon</option>
+    </select>
+
+    <p>You selected: <span id="selectedFruit"></span></p>
+
+    <script>
+        // JavaScript to handle the selection
+        const fruitDropdown = document.getElementById("fruitDropdown");
+        const selectedFruit = document.getElementById("selectedFruit");
+
+        fruitDropdown.addEventListener("change", function () {
+            selectedFruit.textContent = fruitDropdown.value;
+        });
+    </script>
+
+    <script src="script.js"></script>
+    </main>
+
+    <footer>
+        &copy; 2023 My SlagterTheilgaard Project
+    </footer>
+
+    <script src="script.js"></script> <!-- If you have a JavaScript file -->
+</body>
+</html>
